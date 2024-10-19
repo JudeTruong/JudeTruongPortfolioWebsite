@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jude Truong Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/4b55e87a41.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/maze.png" alt="logo" class="logo">
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Experince</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p></p>
+      <h1>Hi, I'm <span> Jude Truong </span> <br> Second Year Computer Science Student</h1>
+    </div>
+  </div>
+</div>
+  <!-- ---------about----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/grad.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title"> About Me</h1>
+          <p>Hi, My name is Jude Truong, I am working towards My BSC at Wilfrid Laurier University for Computer Science. This is my portfolio Website where I can hopefully display some of my skills, experience and projects. Thank you for reading!</p>
+          
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming</span><br>Program Design, develpopment and integration.</li>
+              <li><span>Programming Languages</span><br>Proficient in Java, Python, Html, CSS, PHP and Java Script.</li>
+              <li><span>Data Structures and Algorithms </span><br></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id='experience'>
+            <ul>
+              <li><span>Toyota Whitbey</span><br>Driver and Service Attendent</li>
+              <li><span>Walmart</span><br>Order Support Assosiate</li>
+              <li><span>Hey Moo Moo Milk Tea and Noodle House</span><br>Assitant Cook</li>
+              <li><span>Sunset Grill</span><br>Host</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Stoufville District Secondary School</span><br>High School Diploma</li>
+              <li><span>Wilfrid Laurier University</span><br>Computer Science Program</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- ---------services----------- -->
+  <div id="services">
+    <div class="container">
+       <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Programming</h2>
+          <p>Data Structures and Algorithms, problem solving, Web Development</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+          <h2>Adaptability</h2>
+          <p>Quick learner, positive attitude and constant drive to improve</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <h2>Teamwork</h2>
+          <p> Experience working in collaborative team environments.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ---------portfolio----------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/poker.webp" alt="">
+          <div class="layer">
+            <h3>Coming Soon</h3>
+            <p>Work in Progress</p>
+            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/toDo.webp" alt="">
+          <div class="layer">
+            <h3>Coming Soon  </h3>
+            <p>Work in Progress </p>
+            <a href="https://7d14b229-6682-4f8d-b00a-4ca929c3365d-00-h0xm20ze9txv.riker.replit.dev/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/OIP.jpg" alt="">
+          <div class="layer">
+            <h3> Coming Soon </h3>
+            <p>Work in Progress</p>
+            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- ---------contact----------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p> <i class="fa-solid fa-paper-plane"></i> judenttruong@gmail.com</p>
+          <p> <i class="fa-solid fa-phone"></i> 6474551567</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/jude-truong-4a7b182a1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/JudeTruong" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+          </div>
+         
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+
+
+  
+  
+  <script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+ 
+</body>
+
+</html>
